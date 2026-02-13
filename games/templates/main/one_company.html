@@ -1,0 +1,24 @@
+{%extends "main/base.html"%}
+
+{% block title %} Companies {% endblock %}
+
+{% block content %}
+    <section id="companies_">
+        <h1>
+            Companies Page
+        </h1>
+        <ul>
+            <li>
+                <img src="{{ company.picture.url}}" alt="{{ company.copmany_name }}">
+                <h3>{{ company.company_name }}</h3>
+                <p>{{ company.info }}</p>
+                <p>Developed or Published Games <strong> {%for i  in company.games.all%} <br><a class="links__" href="/main/games/{{ i.pk }}">{{ i.game_name }}</a> {% endfor %}</strong>
+                </p>
+                <p>CEO <br><strong>{{company.ceo}}</strong></p>
+                <p>Founded In <strong><br> {{company.date_founded}} </strong></p>
+                <button><a href="/companies" class="btn">Go Back</a></button>
+                <p> {{ company.descript }}</p>
+            </li>
+        </ul>
+    </section>
+{% endblock %}

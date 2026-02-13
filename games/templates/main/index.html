@@ -1,0 +1,31 @@
+{% extends "main/base.html" %}
+
+{% block title %} Homepage {% endblock %}
+
+{% block content %}
+<div id="index_1">
+    <h1>
+        Welcome !!!
+    </h1>
+    <h2>For Reaching to the stuffs you can use the Quick Menu on the <strong>Top</strong>.</h2>
+</div>
+<div id="index_2">
+    <p>
+        <strong>Companies</strong> : There are some biiiig companies in the world which making master pieces . (Except EA !!)
+    </p>
+        <strong>Master Piece Games</strong> : The most famous ones (at least for me !)
+    </p><p>
+        <strong>Categories</strong> : Some information about what can the gameplay be like .
+    </p>
+</div>
+<div class="game_photos">
+    {%for i in  games %}
+    <a href="/games/{{i.pk}}"><img src="{{i.picture.url}}" alt="{{i.games_name}}"></a>
+    {% endfor %}
+</div>
+<div class="company_photos">
+    {%for i in  companies %}
+    <a href="/companies/{{i.pk}}"><img src="{{i.picture.url}}" alt="{{i.company_name}}"></a>
+    {% endfor %}
+</div>
+{% endblock %}

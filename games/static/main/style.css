@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: rgb(182, 182, 182);
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    font-family: sans-serif;
+    color: rgb(251, 251, 251);
+    background: linear-gradient(25deg, black, red, green);
+    padding: 10px;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+nav ul {
+    list-style: none;   
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+nav ul :hover{
+    color: green;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+main li{
+    border: 2.5px;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: green;
+    text-align: center;
+    margin: 15px;
+}
+
+section {
+    border: 5px;
+    text-decoration: none;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+}
+
+section li{
+    margin-bottom: 20px;
+}
+
+section p{
+    margin: 20px;
+}
+
+
+button {
+    background-color: black;
+    margin: 15px auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85px;
+    height: 35px;
+    border-radius: 5px;
+} 
+
+button a{
+    color: white;
+    text-decoration: none;
+    margin: auto;
+}
+
+button :hover{
+    color: red;
+}
+
+a.links__ {
+    text-decoration: none;
+    color: red;
+}
+
+a.links__:hover {
+    color: green;
+}
+
+#companies_ img {
+    display: flex;
+    background-position: right;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#games_ img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 260px;
+    max-width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#index_1 {
+    margin: 25px;
+    text-align: center;
+}
+
+#index_2 {
+    margin: 25px;
+    text-align: center;
+
+}
+
+div.game_photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.game_photos img{
+    width: 300px;
+    height: 160px;
+    max-width: 100%;
+    margin: 25px;
+}
+
+div.company_photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.company_photos img{
+    max-width: 100%;
+    margin: 25px;
+}
+
+footer {
+    text-align: right;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: red;
+    padding: 25px;
+    background-color: black;
+}

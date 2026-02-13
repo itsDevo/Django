@@ -1,0 +1,20 @@
+{%extends "main/base.html"%}
+
+{% block title %} Categories {% endblock %}
+
+{% block content %}
+    <section id="categories_">
+        <h1>
+            Categories Page
+        </h1>
+        <ul>
+            {%for i in categories%}
+                <li>
+                    <h3>{{ i.category_name }}</h3>
+                    <p>{{ i.info }}</p>
+                    <button><a href="/main/categories/{{ i.pk }}" class="btn">More</a></button>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

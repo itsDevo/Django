@@ -1,0 +1,18 @@
+{%extends "main/base.html"%}
+
+{% block title %} Categories {% endblock %}
+
+{% block content %}
+    <section id="one_category">
+        <h1>
+            Categories Page
+        </h1>
+        <ul>
+            <li>
+                <h3>{{ category.category_name }}</h3>
+                <p>{{ category.info }}</p>
+                <button><a href="/categories" class="btn">Go Back</a></button>
+            </li>
+        </ul>
+    </section>
+{% endblock %}

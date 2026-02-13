@@ -1,0 +1,21 @@
+{%extends "main/base.html"%}
+
+{% block title %} Homepage {% endblock %}
+
+{% block content %}
+    <section id="games_">
+        <h1>
+            Games Page
+        </h1>
+        <ul>
+            {%for i in games%}
+                <li>
+                    <img src="{{i.picture.url}}" alt="{{ i.game_name }}">
+                    <h3>{{ i.game_name }}</h3>
+                    <p>{{ i.game_info }}</p>
+                    <button><a href="/main/games/{{ i.pk }}" class="btn">More</a></button>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

@@ -1,0 +1,23 @@
+{%extends "main/base.html"%}
+
+{% block title %} Games {% endblock %}
+
+{% block content %}
+    <section id="games_">
+        <h1>
+            Games Page
+        </h1>
+        <ul>
+                <li>
+                    <img src="{{ game.picture.url}}" alt="{{ game.game_name }}">
+                    <h3>{{ game.game_name }}</h3>
+                    <p>{{ game.game_info }}</p>
+                    <p>Game Category<strong> {%for i  in game.game_category.all %} <br> <a class="links__" href="/main/categories/{{ i.pk }}">{{ i.category_name }}</a> {% endfor %}</strong></p>
+                    <p>Release Date <strong><br> {{game.release_date}} </strong></p>
+                    <p>Developer Studio <strong><br> {{game.game_developers}} </strong></p>
+                    <p>Publisher Studio <strong><br> {{game.game_publishers}} </strong></p>
+                    <button><a href="/games" class="btn">Go Back</a></button>
+                </li>
+        </ul>
+    </section>
+{% endblock %}
