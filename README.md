@@ -3,7 +3,7 @@
 This project is a **Django web application** developed as a group assignment using **Django, HTML, and CSS**.  
 The website is designed as a **games catalog**, where users can browse games and view detailed information for each one.
 
-## 📌 Project Features
+## Project Features
 
 - A page that displays each game with:
   - **Title**
